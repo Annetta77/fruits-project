@@ -1,0 +1,171 @@
+:root {
+  --textColor: #292929;
+  --grayColor: #838383;
+  --whiteColor: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jura', serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--textColor);
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 108px;
+  margin-top: 58px;
+  margin-bottom: 75px;
+}
+
+.page-header__title {
+  font-size: 24px;
+  margin-right: 310px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__list {
+  display: flex;
+  font-size: 20px;
+  gap: 69px;
+  list-style: none;
+}
+
+.btn {
+  color: var(--grayColor);
+  font-family: inherit;
+  border: 1px solid #888888;
+  border-radius: 50px;
+}
+
+.nav__btn {
+  width: 120px;
+  height: 33px;
+  text-align: left;
+  padding-left: 14px;
+  position: relative;
+  font-size: 14px;
+  background-color: var(--whiteColor);
+}
+
+.nav__btn::after {
+  content: url('./img/Basket.svg');
+  position: absolute;
+  right: 10px;
+}
+
+.page-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0 108px;
+}
+
+.page-main__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 52px;
+  row-gap: 54px;
+  margin-bottom: 80px;
+}
+
+.card {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+  grid-template-areas:
+    'img img'
+    'name price'
+    'btn btn';
+  position: relative;
+}
+
+.card::after {
+  content: url('./img/LoveCircled.svg');
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 12px;
+  right: 19px;
+}
+
+.card__img {
+  grid-area: img;
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.card__title {
+  grid-area: name;
+  margin-bottom: 17px;
+  font-size: 24px;
+}
+
+.card__price {
+  grid-area: price;
+  color: #878787;
+  text-align: right;
+}
+
+.card__btn {
+  grid-area: btn;
+  width: 320px;
+  height: 38px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  padding-left: 17px;
+  position: relative;
+  background-color: var(--whiteColor);
+}
+
+.card__btn::after {
+  content: url('./img/Basket-card.svg');
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  right: 0;
+  padding-right: 15px;
+}
+
+.page-footer {
+  height: 81px;
+  background-color: #ededed;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  margin-top: 27px;
+  line-height: 28px;
+  color: #ababab;
+  font-weight: 500;
+  text-decoration: none;
+}
