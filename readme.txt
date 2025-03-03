@@ -1,0 +1,10 @@
+1. Создание новой ветки: git branch feature/new-feature;
+2. Переключение на новую ветку: git checkout feature/new-feature;
+3. Проверка, что нахожусь в нужной ветке: git branch;
+4. Добавляю комментарий;
+5. Создаю еще одну ветку и сразу же переключаюсь на нее: git checkout -b feature/another-feature;
+6. Добавляю изменения в индекс: git add .;
+7. Создаю коммит: git commit -m 'Создание комментария';
+8. Проверяю список веток: git branch;
+9. Удаляю локальную ветку: git branch -D feature/new-feature;
+10. Проверяю список веток: git branch;
